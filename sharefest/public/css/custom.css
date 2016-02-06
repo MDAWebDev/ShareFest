@@ -1,0 +1,117 @@
+body {
+	background-image: url("https://www.nasa.gov/sites/default/files/thumbnails/image/space_station_over_earth.jpg");
+}
+
+h1 {
+	padding-top: 50px;
+	color: white;
+	text-align: center;
+	font-size: 80px;
+	text-shadow: 1px 1px black;
+	font-weight: bold;
+}
+
+span {
+	
+	font-size: 20px;
+	color: red;
+}
+
+h3 {
+	font-size: 40px;
+	color: #7EC0EE;	
+	text-align: center;
+	font-style: italic;
+}
+
+p {
+	color: white;
+	text-align: center;
+	font-size: 22px;
+}
+
+.container {
+    position: absolute;
+    display: block;
+    margin: auto;    
+    width: 98%;
+    height: 97%;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.dragdrop:hover {
+    /*width:85%;*/
+    border: 3px solid #FFFFFF;
+    /*background-color: #000;*/
+    transition: background-color 1000ms ease;
+    transition-delay: 0.5s;
+    background-color: rgba(255, 250, 250, 0.85);
+}
+
+.dragdrop:hover * {
+
+    /*font-size: 20px;*/
+    /*zoom: 120%;*/
+}
+
+.dragdrop {
+
+    /*transition: all 10000ms ease-in-out;*/
+    /*-webkit-transform: rotate(-10deg);*/
+    /*-moz-transform: rotate(-10deg);*/
+    /*transition-delay: 15s;*/
+
+    -moz-transition: width 1s, height 1s, background-color 1s, -moz-transform 1s;
+    -webkit-transition: width 1s, height 1s, background-color 1s, -webkit-transform 1s;
+    -o-transition: width 1s, height 1s, background-color 1s, -o-transform 1s;
+    transition: width 1s, height 1s, background-color 1s, transform 1s;
+
+
+    width: 30%;
+    height: 40%;
+    border: 2px solid #DDD;
+    line-height: 30px;
+    text-align: center;
+    font-weight: bold;
+    /*background-color: #FFFFFF;*/
+    background-color: rgba(255, 255, 255, 0.65);
+    /*opacity: 0.75;*/
+    position: absolute;
+    display: block;
+    top: 4%;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;    
+    cursor: cell;
+}
+
+.textDrag {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    height: 200px;
+}
+
+
+.addthis_toolbox {
+    /*position: absolute;*/
+    /*top:41%;*/
+    /*left:61%;*/
+    display: inline-table;
+    margin-top: 8px;
+}
+
+
+footer {	
+	position: absolute;
+	bottom: 5px;
+	width: 95%;
+	height: 15px;		
+}
+
